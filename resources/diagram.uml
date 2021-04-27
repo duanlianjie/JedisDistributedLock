@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="573.1976190476188" y="682.0">com.github.jedis.lock.JedisLockManager</node>
+    <node x="675.3095238095237" y="273.0">com.github.jedis.lock.JedisReentrantLock</node>
+    <node x="1088.942857142857" y="416.0">com.github.jedis.lock.NonClusterLockCommand</node>
+    <node x="439.37619047619035" y="0.0">com.github.jedis.lock.ScriptConstants</node>
+    <node x="102.2642857142855" y="899.0">com.github.jedis.lock.LockAspect</node>
+    <node x="0.0" y="748.0">com.github.jedis.lock.DistributedLock</node>
+    <node x="793.3761904761903" y="65.0">com.github.jedis.lock.SubscribeListener</node>
+    <node x="277.37619047619035" y="79.0">com.github.jedis.lock.JedisLock</node>
+    <node x="1358.942857142857" y="416.0">com.github.jedis.lock.ClusterLockCommand</node>
+    <node x="216.99999999999994" y="416.0">com.github.jedis.lock.JedisRedLock</node>
+    <node x="1113.942857142857" y="79.0">com.github.jedis.lock.LockCommand</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.github.jedis.lock.JedisReentrantLock" target="com.github.jedis.lock.ScriptConstants">
+      <point x="-65.0" y="-174.5" />
+      <point x="772.8095238095237" y="213.0" />
+      <point x="606.3761904761903" y="213.0" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="com.github.jedis.lock.JedisLockManager" target="com.github.jedis.lock.ClusterLockCommand">
+      <point x="120.00000000000011" y="-83.5" />
+      <point x="837.1976190476189" y="662.0" />
+      <point x="1470.442857142857" y="662.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="com.github.jedis.lock.JedisLockManager" target="com.github.jedis.lock.JedisRedLock">
+      <point x="-119.99999999999989" y="-83.5" />
+      <point x="597.1976190476189" y="662.0" />
+      <point x="320.49999999999994" y="662.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="com.github.jedis.lock.LockAspect" target="com.github.jedis.lock.JedisLockManager">
+      <point x="105.00000000000011" y="-31.5" />
+      <point x="364.7642857142856" y="874.0" />
+      <point x="717.1976190476188" y="874.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="com.github.jedis.lock.JedisLockManager" target="com.github.jedis.lock.JedisLock">
+      <point x="-71.99999999999989" y="-83.5" />
+      <point x="645.1976190476189" y="652.0" />
+      <point x="489.5142857142856" y="652.0" />
+      <point x="489.5142857142856" y="243.0" />
+      <point x="368.66190476190457" y="243.0" />
+      <point x="20.28571428571422" y="17.5" />
+    </edge>
+    <edge source="com.github.jedis.lock.JedisReentrantLock" target="com.github.jedis.lock.LockCommand">
+      <point x="65.0" y="-174.5" />
+      <point x="902.8095238095237" y="243.0" />
+      <point x="1133.942857142857" y="243.0" />
+      <point x="-60.0" y="17.5" />
+    </edge>
+    <edge source="com.github.jedis.lock.ClusterLockCommand" target="com.github.jedis.lock.LockCommand">
+      <point x="0.0" y="-31.5" />
+      <point x="1470.442857142857" y="253.0" />
+      <point x="1253.942857142857" y="253.0" />
+      <point x="60.0" y="17.5" />
+    </edge>
+    <edge source="com.github.jedis.lock.LockAspect" target="com.github.jedis.lock.JedisLock">
+      <point x="1.1368683772161603E-13" y="-31.5" />
+      <point x="259.7642857142856" y="874.0" />
+      <point x="206.49999999999994" y="874.0" />
+      <point x="206.49999999999994" y="243.0" />
+      <point x="287.51904761904746" y="243.0" />
+      <point x="-60.85714285714289" y="17.5" />
+    </edge>
+    <edge source="com.github.jedis.lock.JedisLockManager" target="com.github.jedis.lock.NonClusterLockCommand">
+      <point x="72.00000000000011" y="-83.5" />
+      <point x="789.1976190476189" y="652.0" />
+      <point x="1213.942857142857" y="652.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="com.github.jedis.lock.JedisLockManager" target="com.github.jedis.lock.JedisReentrantLock">
+      <point x="24.000000000000114" y="-83.5" />
+      <point x="741.1976190476189" y="642.0" />
+      <point x="837.8095238095237" y="642.0" />
+      <point x="0.0" y="174.5" />
+    </edge>
+    <edge source="com.github.jedis.lock.NonClusterLockCommand" target="com.github.jedis.lock.LockCommand">
+      <point x="0.0" y="-31.5" />
+      <point x="20.0" y="17.5" />
+    </edge>
+    <edge source="com.github.jedis.lock.JedisRedLock" target="com.github.jedis.lock.JedisLock">
+      <point x="69.0" y="-31.5" />
+      <point x="389.49999999999994" y="253.0" />
+      <point x="348.37619047619035" y="253.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.github.jedis.lock.JedisReentrantLock" target="com.github.jedis.lock.SubscribeListener">
+      <point x="0.0" y="-174.5" />
+      <point x="837.8095238095237" y="233.0" />
+      <point x="907.8761904761903" y="233.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="com.github.jedis.lock.LockAspect" target="com.github.jedis.lock.DistributedLock">
+      <point x="-104.99999999999989" y="-31.5" />
+      <point x="154.76428571428562" y="874.0" />
+      <point x="98.0" y="874.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.github.jedis.lock.JedisReentrantLock" target="com.github.jedis.lock.JedisLock">
+      <point x="-130.0" y="-174.5" />
+      <point x="707.8095238095237" y="223.0" />
+      <point x="409.23333333333323" y="223.0" />
+      <point x="60.85714285714289" y="17.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8514357053682896" x="791.0" y="481.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
