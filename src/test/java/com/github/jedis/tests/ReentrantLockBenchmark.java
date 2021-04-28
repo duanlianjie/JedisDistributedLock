@@ -15,6 +15,8 @@ import java.util.concurrent.TimeUnit;
 
 public class ReentrantLockBenchmark {
     private static volatile JedisLock lock;
+    private static final int threadSize = 10;
+    private static final int taskSize = 100000;
 
     @BeforeClass
     public static void init() {
@@ -30,8 +32,6 @@ public class ReentrantLockBenchmark {
 
     @Test
     public void lockTest() {
-        int threadSize = 10;
-        int taskSize = 10000;
         CountDownLatch latch = new CountDownLatch(threadSize);
         long begin = System.nanoTime();
         for (int i = 0; i < threadSize; i++) {
@@ -60,8 +60,6 @@ public class ReentrantLockBenchmark {
 
     @Test
     public void tryLockTest() {
-        int threadSize = 100;
-        int taskSize = 10000;
         CountDownLatch latch = new CountDownLatch(threadSize);
         long begin = System.nanoTime();
         for (int i = 0; i < threadSize; i++) {
